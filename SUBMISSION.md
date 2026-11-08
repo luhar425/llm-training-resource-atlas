@@ -15,12 +15,13 @@ Public artifact: https://luhar425.github.io/llm-training-resource-atlas/
 | Datasets and computational infrastructure | Data, compute, energy, and time resource panels plus supporting explanations |
 | Energy and time | Worked Llama energy proxies and DeepSeek pretraining time calculation, with assumptions |
 | Specific models and costs | Llama 2 70B, Llama 3.1 405B, DeepSeek-V3, and GPT-4 disclosure discussion |
-| Clear visual communication | Scalable A3 infographic, direct labels, proportional bars, high contrast, selectable web text |
+| Clear visual communication | Scalable A3 infographic, resource-emphasis badges, sequential arrows, an evaluation return path, direct labels, proportional bars, and selectable web text |
 | Different portfolio skill | Infrastructure analysis and quantitative reasoning extend the first artifact's ML classification focus |
 | Portfolio best practices | About Me with the requested AI engineering focus, two work samples, project context, skills, and navigation |
-| Explanatory document | Two pages summarizing concepts, design rationale, calculations, terminology, and linked sources |
+| Explanatory document | Three pages explaining category choices, sorting decisions, stage-resource connections, model evidence, learning reflection, calculations, and sources |
+| Learning reflection | Challenge, strategy, course connections, and applications to AI engineering are included in the document and website |
 
-No separate grading rubric was supplied. The protected course portfolio link was not accessible through the research tool, so course-specific platform requirements were not verified. This mapping follows the assignment criteria provided in the chat and does not predict a grade.
+The supplied nine-criterion rubric totals 75 available points. The revised artifact addresses every criterion; see [the rubric alignment](RUBRIC-ALIGNMENT.md) for evidence. This is an alignment guide, not an awarded or guaranteed grade. The protected course portfolio link was not accessible through the research tool, so course-specific platform requirements were not verified.
 
 ## Source review
 
@@ -35,4 +36,4 @@ GPU-hours use different hardware and scopes, so the bars do not rank efficiency 
 
 ## Submission
 
-Use the public artifact link or submit the infographic PDF together with the explanatory-document PDF, according to your instructor's requirements. Review the About Me wording and confirm any course-required identification. No Brightspace assignment has been submitted.
+Use the public artifact link or submit the infographic PDF together with the explanatory-document PDF, according to your instructor's requirements. Review the first-person reflection so it accurately represents your learning, and confirm any course-required identification. The reflection was drafted with AI assistance at your request. No Brightspace assignment has been submitted.

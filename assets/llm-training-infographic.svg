@@ -7,83 +7,135 @@
 <text x="48" y="140" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#DFE8EA">How data becomes a deployed system, and where resources go</text>
 <text x="48" y="171" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#C0D1D8">Rahul Niroop     November 8, 2026     Published examples from 2023-2025</text>
 <text x="48" y="226" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#006D77">01   FROM DATA TO DEPLOYMENT</text>
-<text x="798" y="226" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#006D77">02   THE RESOURCE STACK</text>
+<text x="798" y="226" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#006D77">02   RESOURCE KEY</text>
 <rect x="48" y="246" width="706" height="76" rx="5" fill="#FFFFFF" stroke="#CBD6D9"/>
 <rect x="48" y="246" width="48" height="76" rx="5" fill="#006D77" stroke="#006D77"/>
 <text x="61" y="277" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">01</text>
-<path d="M72 323L72 330" stroke="#006D77" stroke-width="2"/>
+<path d="M72 323L72 330" stroke="#006D77" stroke-width="1.6"/>
+<path d="M72 330L68.64402122977057 323.85692206676737" stroke="#006D77" stroke-width="1.6"/>
+<path d="M72 330L75.35597877022943 323.85692206676737" stroke="#006D77" stroke-width="1.6"/>
 <text x="111" y="269" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#173443">Collect data</text>
+<rect x="682" y="253" width="25" height="23" rx="3" fill="#E9F0EF" stroke="#E9F0EF"/>
+<text x="689" y="269" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#006D77">D</text>
+<rect x="713" y="253" width="25" height="23" rx="3" fill="#E9F0EF" stroke="#E9F0EF"/>
+<text x="720" y="269" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#006D77">T</text>
 <text x="111" y="291" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#173443">Gather text and code with documented rights and provenance.</text>
 <text x="111" y="311" font-family="Arial,sans-serif" font-size="13.7" font-weight="400" fill="#476170">Coverage and licensing shape quality, risk, and acquisition cost.</text>
 <rect x="48" y="331" width="706" height="76" rx="5" fill="#FFFFFF" stroke="#CBD6D9"/>
 <rect x="48" y="331" width="48" height="76" rx="5" fill="#006D77" stroke="#006D77"/>
 <text x="61" y="362" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">02</text>
-<path d="M72 408L72 415" stroke="#006D77" stroke-width="2"/>
+<path d="M72 408L72 415" stroke="#006D77" stroke-width="1.6"/>
+<path d="M72 415L68.64402122977057 408.85692206676737" stroke="#006D77" stroke-width="1.6"/>
+<path d="M72 415L75.35597877022943 408.85692206676737" stroke="#006D77" stroke-width="1.6"/>
 <text x="111" y="354" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#173443">Prepare and tokenize</text>
-<text x="111" y="376" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#173443">Deduplicate, filter sensitive content, split held-out data, then tokenize.</text>
-<text x="111" y="396" font-family="Arial,sans-serif" font-size="13.7" font-weight="400" fill="#476170">Tokens are text units. Clean splits help prevent test leakage.</text>
+<rect x="682" y="338" width="25" height="23" rx="3" fill="#E9F0EF" stroke="#E9F0EF"/>
+<text x="689" y="354" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#006D77">D</text>
+<rect x="713" y="338" width="25" height="23" rx="3" fill="#E9F0EF" stroke="#E9F0EF"/>
+<text x="720" y="354" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#006D77">C</text>
+<text x="111" y="376" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#173443">Clean text, protect privacy, split test data, and create tokens.</text>
+<text x="111" y="396" font-family="Arial,sans-serif" font-size="13.7" font-weight="400" fill="#476170">Tokens are text pieces. Keep evaluation examples out of training.</text>
 <rect x="48" y="416" width="706" height="76" rx="5" fill="#FFFFFF" stroke="#CBD6D9"/>
 <rect x="48" y="416" width="48" height="76" rx="5" fill="#006D77" stroke="#006D77"/>
 <text x="61" y="447" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">03</text>
-<path d="M72 493L72 500" stroke="#006D77" stroke-width="2"/>
+<path d="M72 493L72 500" stroke="#006D77" stroke-width="1.6"/>
+<path d="M72 500L68.64402122977057 493.85692206676737" stroke="#006D77" stroke-width="1.6"/>
+<path d="M72 500L75.35597877022943 493.85692206676737" stroke="#006D77" stroke-width="1.6"/>
 <text x="111" y="439" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#173443">Design and pilot</text>
-<text x="111" y="461" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#173443">Choose model size and architecture. Test small runs and a compute budget.</text>
-<text x="111" y="481" font-family="Arial,sans-serif" font-size="13.7" font-weight="400" fill="#476170">Balance data, memory, and model capacity before scaling up.</text>
+<rect x="682" y="423" width="25" height="23" rx="3" fill="#E9F0EF" stroke="#E9F0EF"/>
+<text x="689" y="439" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#006D77">C</text>
+<rect x="713" y="423" width="25" height="23" rx="3" fill="#E9F0EF" stroke="#E9F0EF"/>
+<text x="720" y="439" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#006D77">T</text>
+<text x="111" y="461" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#173443">Choose model size and architecture. Pilot small runs before scaling.</text>
+<text x="111" y="481" font-family="Arial,sans-serif" font-size="13.7" font-weight="400" fill="#476170">Fit useful model capacity and training data to a compute budget.</text>
 <rect x="48" y="501" width="706" height="76" rx="5" fill="#FFFFFF" stroke="#CBD6D9"/>
 <rect x="48" y="501" width="48" height="76" rx="5" fill="#006D77" stroke="#006D77"/>
 <text x="61" y="532" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">04</text>
-<path d="M72 578L72 585" stroke="#006D77" stroke-width="2"/>
+<path d="M72 578L72 585" stroke="#006D77" stroke-width="1.6"/>
+<path d="M72 585L68.64402122977057 578.8569220667674" stroke="#006D77" stroke-width="1.6"/>
+<path d="M72 585L75.35597877022943 578.8569220667674" stroke="#006D77" stroke-width="1.6"/>
 <text x="111" y="524" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#173443">Pretrain</text>
-<text x="111" y="546" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#173443">Predict the next token, measure loss, backpropagate, and update weights.</text>
-<text x="111" y="566" font-family="Arial,sans-serif" font-size="13.7" font-weight="400" fill="#476170">Repeat across batches on many GPUs. Save recovery checkpoints.</text>
+<rect x="651" y="508" width="25" height="23" rx="3" fill="#E9F0EF" stroke="#E9F0EF"/>
+<text x="658" y="524" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#006D77">D</text>
+<rect x="682" y="508" width="25" height="23" rx="3" fill="#E9F0EF" stroke="#E9F0EF"/>
+<text x="689" y="524" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#006D77">C</text>
+<rect x="713" y="508" width="25" height="23" rx="3" fill="#E9F0EF" stroke="#E9F0EF"/>
+<text x="720" y="524" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#006D77">E</text>
+<text x="111" y="546" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#173443">Predict tokens, measure error, and update the learned model weights.</text>
+<text x="111" y="566" font-family="Arial,sans-serif" font-size="13.7" font-weight="400" fill="#476170">Gradients guide updates. Many GPUs repeat this across batches.</text>
 <rect x="48" y="586" width="706" height="76" rx="5" fill="#FFFFFF" stroke="#CBD6D9"/>
 <rect x="48" y="586" width="48" height="76" rx="5" fill="#006D77" stroke="#006D77"/>
 <text x="61" y="617" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">05</text>
-<path d="M72 663L72 670" stroke="#006D77" stroke-width="2"/>
+<path d="M72 663L72 670" stroke="#006D77" stroke-width="1.6"/>
+<path d="M72 670L68.64402122977057 663.8569220667674" stroke="#006D77" stroke-width="1.6"/>
+<path d="M72 670L75.35597877022943 663.8569220667674" stroke="#006D77" stroke-width="1.6"/>
 <text x="111" y="609" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#173443">Post-train</text>
-<text x="111" y="631" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#173443">Teach instructions with demonstrations, then optimize preferences or rewards.</text>
-<text x="111" y="651" font-family="Arial,sans-serif" font-size="13.7" font-weight="400" fill="#476170">SFT and methods such as RLHF use human or checked synthetic feedback.</text>
+<rect x="651" y="593" width="25" height="23" rx="3" fill="#E9F0EF" stroke="#E9F0EF"/>
+<text x="658" y="609" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#006D77">D</text>
+<rect x="682" y="593" width="25" height="23" rx="3" fill="#E9F0EF" stroke="#E9F0EF"/>
+<text x="689" y="609" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#006D77">C</text>
+<rect x="713" y="593" width="25" height="23" rx="3" fill="#E9F0EF" stroke="#E9F0EF"/>
+<text x="720" y="609" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#006D77">T</text>
+<text x="111" y="631" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#173443">Teach instructions with examples, then refine responses with feedback.</text>
+<text x="111" y="651" font-family="Arial,sans-serif" font-size="13.7" font-weight="400" fill="#476170">Human ratings and checked synthetic examples guide model behavior.</text>
 <rect x="48" y="671" width="706" height="76" rx="5" fill="#FFFFFF" stroke="#CBD6D9"/>
 <rect x="48" y="671" width="48" height="76" rx="5" fill="#006D77" stroke="#006D77"/>
 <text x="61" y="702" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">06</text>
-<path d="M72 748L72 755" stroke="#006D77" stroke-width="2"/>
+<path d="M72 748L72 755" stroke="#006D77" stroke-width="1.6"/>
+<path d="M72 755L68.64402122977057 748.8569220667674" stroke="#006D77" stroke-width="1.6"/>
+<path d="M72 755L75.35597877022943 748.8569220667674" stroke="#006D77" stroke-width="1.6"/>
 <text x="111" y="694" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#173443">Evaluate and improve</text>
+<rect x="682" y="678" width="25" height="23" rx="3" fill="#E9F0EF" stroke="#E9F0EF"/>
+<text x="689" y="694" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#006D77">D</text>
+<rect x="713" y="678" width="25" height="23" rx="3" fill="#E9F0EF" stroke="#E9F0EF"/>
+<text x="720" y="694" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#006D77">T</text>
 <text x="111" y="716" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#173443">Test task accuracy, factuality, bias, privacy, and misuse resistance.</text>
 <text x="111" y="736" font-family="Arial,sans-serif" font-size="13.7" font-weight="400" fill="#476170">Use separate tests. Failed checks can send work back to earlier stages.</text>
 <rect x="48" y="756" width="706" height="76" rx="5" fill="#FFFFFF" stroke="#CBD6D9"/>
 <rect x="48" y="756" width="48" height="76" rx="5" fill="#006D77" stroke="#006D77"/>
 <text x="61" y="787" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">07</text>
 <text x="111" y="779" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#173443">Deploy and monitor</text>
-<text x="111" y="801" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#173443">Optimize and serve the model. Track latency, quality, failures, and use.</text>
-<text x="111" y="821" font-family="Arial,sans-serif" font-size="13.7" font-weight="400" fill="#476170">Inference needs ongoing compute. Ordinary prompts do not update weights.</text>
+<rect x="651" y="763" width="25" height="23" rx="3" fill="#E9F0EF" stroke="#E9F0EF"/>
+<text x="658" y="779" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#006D77">C</text>
+<rect x="682" y="763" width="25" height="23" rx="3" fill="#E9F0EF" stroke="#E9F0EF"/>
+<text x="689" y="779" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#006D77">E</text>
+<rect x="713" y="763" width="25" height="23" rx="3" fill="#E9F0EF" stroke="#E9F0EF"/>
+<text x="720" y="779" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#006D77">T</text>
+<text x="111" y="801" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#173443">Optimize and serve the model. Monitor response speed and reliability.</text>
+<text x="111" y="821" font-family="Arial,sans-serif" font-size="13.7" font-weight="400" fill="#476170">Generation uses ongoing compute. Ordinary prompts do not update weights.</text>
 <rect x="798" y="246" width="354" height="137" rx="5" fill="#E9F0EF" stroke="#E9F0EF"/>
-<text x="817" y="274" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#006D77">01   Data</text>
+<text x="817" y="274" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#006D77">D   Data</text>
 <text x="817" y="297" font-family="Arial,sans-serif" font-size="14.5" font-weight="700" fill="#173443">Text, code, storage, curation</text>
 <text x="817" y="321" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">Relevant, diverse examples support coverage.</text>
 <text x="817" y="340" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">Licensing, cleaning, and annotation cost</text>
 <text x="817" y="359" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">money. More raw data alone does not assure</text>
 <text x="817" y="378" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">quality.</text>
 <rect x="798" y="395" width="354" height="137" rx="5" fill="#EEF0F5" stroke="#EEF0F5"/>
-<text x="817" y="423" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#006D77">02   Compute</text>
-<text x="817" y="446" font-family="Arial,sans-serif" font-size="14.5" font-weight="700" fill="#173443">GPUs or TPUs, memory, networks</text>
-<text x="817" y="470" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">Accelerators perform training math. Fast</text>
-<text x="817" y="489" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">interconnects share work. Memory holds</text>
-<text x="817" y="508" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">weights, activations, and optimizer state.</text>
+<text x="817" y="423" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#006D77">C   Compute</text>
+<text x="817" y="446" font-family="Arial,sans-serif" font-size="14.5" font-weight="700" fill="#173443">Accelerators, memory, networks</text>
+<text x="817" y="470" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">GPUs or TPUs perform the training math. Fast</text>
+<text x="817" y="489" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">networks share work. Memory holds weights</text>
+<text x="817" y="508" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">and other state needed to update the model.</text>
 <rect x="798" y="544" width="354" height="137" rx="5" fill="#E9F0EF" stroke="#E9F0EF"/>
-<text x="817" y="572" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#006D77">03   Energy</text>
+<text x="817" y="572" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#006D77">E   Energy</text>
 <text x="817" y="595" font-family="Arial,sans-serif" font-size="14.5" font-weight="700" fill="#173443">Electricity and cooling</text>
 <text x="817" y="619" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">Power sustains the cluster. Hardware</text>
 <text x="817" y="638" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">efficiency and utilization affect use. Carbon</text>
 <text x="817" y="657" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">also depends on the electricity source and</text>
 <text x="817" y="676" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">accounting method.</text>
 <rect x="798" y="693" width="354" height="137" rx="5" fill="#EEF0F5" stroke="#EEF0F5"/>
-<text x="817" y="721" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#006D77">04   Time and people</text>
-<text x="817" y="744" font-family="Arial,sans-serif" font-size="14.5" font-weight="700" fill="#173443">Cluster hours and project effort</text>
-<text x="817" y="768" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">Parallel hardware can shorten a run. Data</text>
-<text x="817" y="787" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">preparation, experiments, feedback, and</text>
-<text x="817" y="806" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">evaluation extend the project and require</text>
-<text x="817" y="825" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">skilled people.</text>
-<text x="48" y="868" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#476170">Typical workflow. Stages overlap and repeat. Sources [1-3, 6, 8].</text>
+<text x="817" y="721" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#006D77">T   Time</text>
+<text x="817" y="744" font-family="Arial,sans-serif" font-size="14.5" font-weight="700" fill="#173443">Run duration and iteration</text>
+<text x="817" y="768" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">Data preparation, experiments, and feedback</text>
+<text x="817" y="787" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">extend the project. Parallel hardware can</text>
+<text x="817" y="806" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">shorten a run, subject to memory and network</text>
+<text x="817" y="825" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">limits.</text>
+<path d="M48 709L28 709" stroke="#006D77" stroke-width="1.8"/>
+<path d="M28 709L28 369" stroke="#006D77" stroke-width="1.8"/>
+<path d="M28 369L48 369" stroke="#006D77" stroke-width="1.8"/>
+<path d="M48 369L41.85692206676739 372.3559787702294" stroke="#006D77" stroke-width="1.8"/>
+<path d="M48 369L41.85692206676739 365.6440212297706" stroke="#006D77" stroke-width="1.8"/>
+<text x="48" y="855" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#476170">Letter badges link stages to typical resource emphasis, not exclusive use or measured budget shares.</text>
+<text x="48" y="875" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#476170">Evaluation can return work to data preparation or model design. Skilled people support every stage. [1-3, 6, 8]</text>
 <text x="48" y="919" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#006D77">03   WHAT DEVELOPERS HAVE DISCLOSED</text>
 <text x="48" y="947" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#476170">GPU-hours shown on a common scale (millions). Hardware and scope differ.</text>
 <text x="48" y="970" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#476170">These bars show reported usage, not comparable speed, efficiency, or model quality.</text>
@@ -129,8 +181,9 @@
 <text x="626" y="1545" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#476170">Capacity-based proxy, not metered electricity. Cooling and other equipment depend</text>
 <text x="626" y="1563" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#476170">on the accounting boundary.</text>
 <path d="M48 1600L1152 1600" stroke="#CBD6D9" stroke-width="1"/>
-<text x="48" y="1622" font-family="Arial,sans-serif" font-size="12.5" font-weight="400" fill="#476170">B = billion parameters. T = trillion tokens. A token is a word, word part, or character. GPU-hour = one GPU for one hour.</text>
-<text x="48" y="1642" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#476170">Source key: [1] Wolfram  [2] IBM  [3] Ouyang et al.  [4] Llama 2  [5] Llama 3.1  [6] DeepSeek-V3  [7] GPT-4  [8] Hoffmann et al.</text>
+<text x="48" y="1618" font-family="Arial,sans-serif" font-size="12.5" font-weight="400" fill="#476170">B = billion parameters. T = trillion tokens in model data labels. A GPU-hour = one GPU for one hour.</text>
+<text x="48" y="1635" font-family="Arial,sans-serif" font-size="12.5" font-weight="400" fill="#476170">GPU = graphics processing unit. TPU = tensor processing unit. D, C, E, T badges use the resource key above.</text>
+<text x="48" y="1650" font-family="Arial,sans-serif" font-size="11.5" font-weight="400" fill="#476170">Sources: [1] Wolfram  [2] IBM  [3] Ouyang et al.  [4] Llama 2  [5] Llama 3.1  [6] DeepSeek-V3  [7] GPT-4  [8] Hoffmann et al.</text>
 <text x="48" y="1662" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#006D77">Full sources, accessible text, calculations, and explanatory document</text>
 <a href="https://luhar425.github.io/llm-training-resource-atlas/"><rect x="48" y="1650" width="367.5234375" height="16" fill="transparent"/></a>
 </svg>

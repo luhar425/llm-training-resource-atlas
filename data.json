@@ -7,23 +7,23 @@
     ],
     [
       "Prepare and tokenize",
-      "Deduplicate, filter sensitive content, split held-out data, then tokenize.",
-      "Tokens are text units. Clean splits help prevent test leakage."
+      "Clean text, protect privacy, split test data, and create tokens.",
+      "Tokens are text pieces. Keep evaluation examples out of training."
     ],
     [
       "Design and pilot",
-      "Choose model size and architecture. Test small runs and a compute budget.",
-      "Balance data, memory, and model capacity before scaling up."
+      "Choose model size and architecture. Pilot small runs before scaling.",
+      "Fit useful model capacity and training data to a compute budget."
     ],
     [
       "Pretrain",
-      "Predict the next token, measure loss, backpropagate, and update weights.",
-      "Repeat across batches on many GPUs. Save recovery checkpoints."
+      "Predict tokens, measure error, and update the learned model weights.",
+      "Gradients guide updates. Many GPUs repeat this across batches."
     ],
     [
       "Post-train",
-      "Teach instructions with demonstrations, then optimize preferences or rewards.",
-      "SFT and methods such as RLHF use human or checked synthetic feedback."
+      "Teach instructions with examples, then refine responses with feedback.",
+      "Human ratings and checked synthetic examples guide model behavior."
     ],
     [
       "Evaluate and improve",
@@ -32,8 +32,8 @@
     ],
     [
       "Deploy and monitor",
-      "Optimize and serve the model. Track latency, quality, failures, and use.",
-      "Inference needs ongoing compute. Ordinary prompts do not update weights."
+      "Optimize and serve the model. Monitor response speed and reliability.",
+      "Generation uses ongoing compute. Ordinary prompts do not update weights."
     ]
   ],
   "resources": [
@@ -44,8 +44,8 @@
     ],
     [
       "Compute",
-      "GPUs or TPUs, memory, networks",
-      "Accelerators perform training math. Fast interconnects share work. Memory holds weights, activations, and optimizer state."
+      "Accelerators, memory, networks",
+      "GPUs or TPUs perform the training math. Fast networks share work. Memory holds weights and other state needed to update the model."
     ],
     [
       "Energy",
@@ -53,10 +53,19 @@
       "Power sustains the cluster. Hardware efficiency and utilization affect use. Carbon also depends on the electricity source and accounting method."
     ],
     [
-      "Time and people",
-      "Cluster hours and project effort",
-      "Parallel hardware can shorten a run. Data preparation, experiments, feedback, and evaluation extend the project and require skilled people."
+      "Time",
+      "Run duration and iteration",
+      "Data preparation, experiments, and feedback extend the project. Parallel hardware can shorten a run, subject to memory and network limits."
     ]
+  ],
+  "emphasis": [
+    "DT",
+    "DC",
+    "CT",
+    "DCE",
+    "DCT",
+    "DT",
+    "CET"
   ],
   "models": [
     {

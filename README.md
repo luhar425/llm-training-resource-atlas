@@ -13,11 +13,14 @@ This second portfolio artifact explains seven LLM training stages, the infrastru
 - [Infographic PDF](assets/llm-training-infographic.pdf)
 - [Infographic PNG](assets/llm-training-infographic.png)
 - [Scalable SVG](assets/llm-training-infographic.svg)
-- [Brief explanatory document PDF](documents/explanatory-document.pdf)
+- [Explanatory document and reflection PDF](documents/explanatory-document.pdf)
 - [Editable explanatory document](documents/explanatory-document.docx)
 - [Explanation and references in Markdown](documents/explanatory-document.md)
 
-The website includes an accessible text equivalent, a model comparison table, source links, and a simple scenario calculator. It works as a static site without a build step or external assets.
+The website includes an accessible text equivalent, classification rationale, a stage-resource relationship table, a learning reflection, a model comparison table, source links, and a simple scenario calculator. It works as a static site without a build step or external assets.
+
+- [Learning reflection](documents/learning-reflection.md)
+- [Rubric alignment](RUBRIC-ALIGNMENT.md)
 
 ## Evidence boundaries
 
