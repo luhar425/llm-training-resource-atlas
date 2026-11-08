@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="3360" viewBox="0 0 1200 1680" role="img" aria-labelledby="title desc">
+<title id="title">Training a large language model</title><desc id="desc">Seven training stages, four resource categories, and reported Llama and DeepSeek examples. Full accessible text and source links accompany this graphic.</desc>
+<rect x="0" y="0" width="1200" height="1680" rx="0" fill="#F8F6F0" stroke="#F8F6F0"/>
+<rect x="0" y="0" width="1200" height="187" rx="0" fill="#142C3B" stroke="#142C3B"/>
+<text x="48" y="39" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#9FD9DA">AI / ML PORTFOLIO     ARTIFACT 02</text>
+<text x="48" y="98" font-family="Georgia,serif" font-size="48" font-weight="400" fill="#FFFFFF">Training a large language model</text>
+<text x="48" y="140" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#DFE8EA">How data becomes a deployed system, and where resources go</text>
+<text x="48" y="171" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#C0D1D8">Rahul Niroop     November 8, 2026     Published examples from 2023-2025</text>
+<text x="48" y="226" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#006D77">01   FROM DATA TO DEPLOYMENT</text>
+<text x="798" y="226" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#006D77">02   THE RESOURCE STACK</text>
+<rect x="48" y="246" width="706" height="76" rx="5" fill="#FFFFFF" stroke="#CBD6D9"/>
+<rect x="48" y="246" width="48" height="76" rx="5" fill="#006D77" stroke="#006D77"/>
+<text x="61" y="277" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">01</text>
+<path d="M72 323L72 330" stroke="#006D77" stroke-width="2"/>
+<text x="111" y="269" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#173443">Collect data</text>
+<text x="111" y="291" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#173443">Gather text and code with documented rights and provenance.</text>
+<text x="111" y="311" font-family="Arial,sans-serif" font-size="13.7" font-weight="400" fill="#476170">Coverage and licensing shape quality, risk, and acquisition cost.</text>
+<rect x="48" y="331" width="706" height="76" rx="5" fill="#FFFFFF" stroke="#CBD6D9"/>
+<rect x="48" y="331" width="48" height="76" rx="5" fill="#006D77" stroke="#006D77"/>
+<text x="61" y="362" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">02</text>
+<path d="M72 408L72 415" stroke="#006D77" stroke-width="2"/>
+<text x="111" y="354" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#173443">Prepare and tokenize</text>
+<text x="111" y="376" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#173443">Deduplicate, filter sensitive content, split held-out data, then tokenize.</text>
+<text x="111" y="396" font-family="Arial,sans-serif" font-size="13.7" font-weight="400" fill="#476170">Tokens are text units. Clean splits help prevent test leakage.</text>
+<rect x="48" y="416" width="706" height="76" rx="5" fill="#FFFFFF" stroke="#CBD6D9"/>
+<rect x="48" y="416" width="48" height="76" rx="5" fill="#006D77" stroke="#006D77"/>
+<text x="61" y="447" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">03</text>
+<path d="M72 493L72 500" stroke="#006D77" stroke-width="2"/>
+<text x="111" y="439" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#173443">Design and pilot</text>
+<text x="111" y="461" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#173443">Choose model size and architecture. Test small runs and a compute budget.</text>
+<text x="111" y="481" font-family="Arial,sans-serif" font-size="13.7" font-weight="400" fill="#476170">Balance data, memory, and model capacity before scaling up.</text>
+<rect x="48" y="501" width="706" height="76" rx="5" fill="#FFFFFF" stroke="#CBD6D9"/>
+<rect x="48" y="501" width="48" height="76" rx="5" fill="#006D77" stroke="#006D77"/>
+<text x="61" y="532" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">04</text>
+<path d="M72 578L72 585" stroke="#006D77" stroke-width="2"/>
+<text x="111" y="524" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#173443">Pretrain</text>
+<text x="111" y="546" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#173443">Predict the next token, measure loss, backpropagate, and update weights.</text>
+<text x="111" y="566" font-family="Arial,sans-serif" font-size="13.7" font-weight="400" fill="#476170">Repeat across batches on many GPUs. Save recovery checkpoints.</text>
+<rect x="48" y="586" width="706" height="76" rx="5" fill="#FFFFFF" stroke="#CBD6D9"/>
+<rect x="48" y="586" width="48" height="76" rx="5" fill="#006D77" stroke="#006D77"/>
+<text x="61" y="617" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">05</text>
+<path d="M72 663L72 670" stroke="#006D77" stroke-width="2"/>
+<text x="111" y="609" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#173443">Post-train</text>
+<text x="111" y="631" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#173443">Teach instructions with demonstrations, then optimize preferences or rewards.</text>
+<text x="111" y="651" font-family="Arial,sans-serif" font-size="13.7" font-weight="400" fill="#476170">SFT and methods such as RLHF use human or checked synthetic feedback.</text>
+<rect x="48" y="671" width="706" height="76" rx="5" fill="#FFFFFF" stroke="#CBD6D9"/>
+<rect x="48" y="671" width="48" height="76" rx="5" fill="#006D77" stroke="#006D77"/>
+<text x="61" y="702" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">06</text>
+<path d="M72 748L72 755" stroke="#006D77" stroke-width="2"/>
+<text x="111" y="694" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#173443">Evaluate and improve</text>
+<text x="111" y="716" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#173443">Test task accuracy, factuality, bias, privacy, and misuse resistance.</text>
+<text x="111" y="736" font-family="Arial,sans-serif" font-size="13.7" font-weight="400" fill="#476170">Use separate tests. Failed checks can send work back to earlier stages.</text>
+<rect x="48" y="756" width="706" height="76" rx="5" fill="#FFFFFF" stroke="#CBD6D9"/>
+<rect x="48" y="756" width="48" height="76" rx="5" fill="#006D77" stroke="#006D77"/>
+<text x="61" y="787" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">07</text>
+<text x="111" y="779" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#173443">Deploy and monitor</text>
+<text x="111" y="801" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#173443">Optimize and serve the model. Track latency, quality, failures, and use.</text>
+<text x="111" y="821" font-family="Arial,sans-serif" font-size="13.7" font-weight="400" fill="#476170">Inference needs ongoing compute. Ordinary prompts do not update weights.</text>
+<rect x="798" y="246" width="354" height="137" rx="5" fill="#E9F0EF" stroke="#E9F0EF"/>
+<text x="817" y="274" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#006D77">01   Data</text>
+<text x="817" y="297" font-family="Arial,sans-serif" font-size="14.5" font-weight="700" fill="#173443">Text, code, storage, curation</text>
+<text x="817" y="321" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">Relevant, diverse examples support coverage.</text>
+<text x="817" y="340" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">Licensing, cleaning, and annotation cost</text>
+<text x="817" y="359" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">money. More raw data alone does not assure</text>
+<text x="817" y="378" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">quality.</text>
+<rect x="798" y="395" width="354" height="137" rx="5" fill="#EEF0F5" stroke="#EEF0F5"/>
+<text x="817" y="423" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#006D77">02   Compute</text>
+<text x="817" y="446" font-family="Arial,sans-serif" font-size="14.5" font-weight="700" fill="#173443">GPUs or TPUs, memory, networks</text>
+<text x="817" y="470" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">Accelerators perform training math. Fast</text>
+<text x="817" y="489" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">interconnects share work. Memory holds</text>
+<text x="817" y="508" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">weights, activations, and optimizer state.</text>
+<rect x="798" y="544" width="354" height="137" rx="5" fill="#E9F0EF" stroke="#E9F0EF"/>
+<text x="817" y="572" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#006D77">03   Energy</text>
+<text x="817" y="595" font-family="Arial,sans-serif" font-size="14.5" font-weight="700" fill="#173443">Electricity and cooling</text>
+<text x="817" y="619" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">Power sustains the cluster. Hardware</text>
+<text x="817" y="638" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">efficiency and utilization affect use. Carbon</text>
+<text x="817" y="657" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">also depends on the electricity source and</text>
+<text x="817" y="676" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">accounting method.</text>
+<rect x="798" y="693" width="354" height="137" rx="5" fill="#EEF0F5" stroke="#EEF0F5"/>
+<text x="817" y="721" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#006D77">04   Time and people</text>
+<text x="817" y="744" font-family="Arial,sans-serif" font-size="14.5" font-weight="700" fill="#173443">Cluster hours and project effort</text>
+<text x="817" y="768" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">Parallel hardware can shorten a run. Data</text>
+<text x="817" y="787" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">preparation, experiments, feedback, and</text>
+<text x="817" y="806" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">evaluation extend the project and require</text>
+<text x="817" y="825" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">skilled people.</text>
+<text x="48" y="868" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#476170">Typical workflow. Stages overlap and repeat. Sources [1-3, 6, 8].</text>
+<text x="48" y="919" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#006D77">03   WHAT DEVELOPERS HAVE DISCLOSED</text>
+<text x="48" y="947" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#476170">GPU-hours shown on a common scale (millions). Hardware and scope differ.</text>
+<text x="48" y="970" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#476170">These bars show reported usage, not comparable speed, efficiency, or model quality.</text>
+<text x="48" y="1010" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#173443">Llama 2 70B</text>
+<text x="48" y="1033" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">2.0T pretraining tokens</text>
+<text x="48" y="1055" font-family="Arial,sans-serif" font-size="13.5" font-weight="400" fill="#476170">A100 80GB / Pretraining</text>
+<rect x="435" y="995" width="395" height="22" rx="2" fill="#E0E7E6" stroke="#E0E7E6"/>
+<rect x="435" y="995" width="22.0339299610895" height="22" rx="2" fill="#006D77" stroke="#006D77"/>
+<text x="845" y="1013" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#173443">1.720M GPU-hours [4]</text>
+<text x="435" y="1044" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#173443">688 MWh power-capacity proxy</text>
+<text x="435" y="1066" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#476170">Dollar training budget not stated in the cited card.</text>
+<path d="M48 1089L1152 1089" stroke="#CBD6D9" stroke-width="1"/>
+<text x="48" y="1122" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#173443">Llama 3.1 405B</text>
+<text x="48" y="1145" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">15T+ pretraining tokens</text>
+<text x="48" y="1167" font-family="Arial,sans-serif" font-size="13.5" font-weight="400" fill="#476170">H100 80GB / Training, as reported</text>
+<rect x="435" y="1107" width="395" height="22" rx="2" fill="#E0E7E6" stroke="#E0E7E6"/>
+<rect x="435" y="1107" width="395.0" height="22" rx="2" fill="#315F91" stroke="#315F91"/>
+<text x="845" y="1125" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#173443">30.840M GPU-hours [5]</text>
+<text x="435" y="1156" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#173443">21.59 GWh power-capacity proxy</text>
+<text x="435" y="1178" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#476170">Dollar training budget not stated in the cited card.</text>
+<path d="M48 1201L1152 1201" stroke="#CBD6D9" stroke-width="1"/>
+<text x="48" y="1234" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#173443">DeepSeek-V3</text>
+<text x="48" y="1257" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#476170">14.8T pretraining tokens</text>
+<text x="48" y="1279" font-family="Arial,sans-serif" font-size="13.5" font-weight="400" fill="#476170">H800 / Official training total</text>
+<rect x="435" y="1219" width="395" height="22" rx="2" fill="#E0E7E6" stroke="#E0E7E6"/>
+<rect x="435" y="1219" width="35.70881971465629" height="22" rx="2" fill="#9E5E20" stroke="#9E5E20"/>
+<text x="845" y="1237" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#173443">2.788M GPU-hours [6]</text>
+<text x="435" y="1268" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#173443">$5.576M at assumed $2/GPU-hour</text>
+<text x="435" y="1290" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#476170">Excludes prior research and ablations. Not a total project budget.</text>
+<rect x="48" y="1334" width="1104" height="63" rx="4" fill="#142C3B" stroke="#142C3B"/>
+<text x="65" y="1358" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">GPT-4 (2023): training hardware, compute, model size, and dataset construction</text>
+<text x="65" y="1381" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#DCE6E9">are withheld in its technical report. A verified full training dollar budget is not provided there. [7]</text>
+<text x="48" y="1436" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#006D77">04   READ THE UNITS BEFORE THE PRICE TAG</text>
+<path d="M598 1452L598 1585" stroke="#CBD6D9" stroke-width="1"/>
+<text x="48" y="1468" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#173443">Time is not the same as GPU-hours</text>
+<text x="48" y="1495" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#173443">DeepSeek-V3 pretraining: 2.664M GPU-hours [6]</text>
+<text x="48" y="1520" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#006D77">2,664,000 / (2,048 GPUs x 24) = 54.2 days</text>
+<text x="48" y="1545" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#476170">Calculated at full occupancy. The report says less than two months. Research and</text>
+<text x="48" y="1563" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#476170">preparation add project time.</text>
+<text x="626" y="1468" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#173443">Energy depends on the boundary</text>
+<text x="626" y="1495" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#173443">Llama 3.1 405B: 30.84M hours x 0.700 kW [5]</text>
+<text x="626" y="1520" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#006D77">= 21.588M kWh = 21.59 GWh</text>
+<text x="626" y="1545" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#476170">Capacity-based proxy, not metered electricity. Cooling and other equipment depend</text>
+<text x="626" y="1563" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#476170">on the accounting boundary.</text>
+<path d="M48 1600L1152 1600" stroke="#CBD6D9" stroke-width="1"/>
+<text x="48" y="1622" font-family="Arial,sans-serif" font-size="12.5" font-weight="400" fill="#476170">B = billion parameters. T = trillion tokens. A token is a word, word part, or character. GPU-hour = one GPU for one hour.</text>
+<text x="48" y="1642" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#476170">Source key: [1] Wolfram  [2] IBM  [3] Ouyang et al.  [4] Llama 2  [5] Llama 3.1  [6] DeepSeek-V3  [7] GPT-4  [8] Hoffmann et al.</text>
+<text x="48" y="1662" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#006D77">Full sources, accessible text, calculations, and explanatory document</text>
+<a href="https://luhar425.github.io/llm-training-resource-atlas/"><rect x="48" y="1650" width="367.5234375" height="16" fill="transparent"/></a>
+</svg>

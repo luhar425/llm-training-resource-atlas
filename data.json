@@ -1,0 +1,168 @@
+{
+  "stages": [
+    [
+      "Collect data",
+      "Gather text and code with documented rights and provenance.",
+      "Coverage and licensing shape quality, risk, and acquisition cost."
+    ],
+    [
+      "Prepare and tokenize",
+      "Deduplicate, filter sensitive content, split held-out data, then tokenize.",
+      "Tokens are text units. Clean splits help prevent test leakage."
+    ],
+    [
+      "Design and pilot",
+      "Choose model size and architecture. Test small runs and a compute budget.",
+      "Balance data, memory, and model capacity before scaling up."
+    ],
+    [
+      "Pretrain",
+      "Predict the next token, measure loss, backpropagate, and update weights.",
+      "Repeat across batches on many GPUs. Save recovery checkpoints."
+    ],
+    [
+      "Post-train",
+      "Teach instructions with demonstrations, then optimize preferences or rewards.",
+      "SFT and methods such as RLHF use human or checked synthetic feedback."
+    ],
+    [
+      "Evaluate and improve",
+      "Test task accuracy, factuality, bias, privacy, and misuse resistance.",
+      "Use separate tests. Failed checks can send work back to earlier stages."
+    ],
+    [
+      "Deploy and monitor",
+      "Optimize and serve the model. Track latency, quality, failures, and use.",
+      "Inference needs ongoing compute. Ordinary prompts do not update weights."
+    ]
+  ],
+  "resources": [
+    [
+      "Data",
+      "Text, code, storage, curation",
+      "Relevant, diverse examples support coverage. Licensing, cleaning, and annotation cost money. More raw data alone does not assure quality."
+    ],
+    [
+      "Compute",
+      "GPUs or TPUs, memory, networks",
+      "Accelerators perform training math. Fast interconnects share work. Memory holds weights, activations, and optimizer state."
+    ],
+    [
+      "Energy",
+      "Electricity and cooling",
+      "Power sustains the cluster. Hardware efficiency and utilization affect use. Carbon also depends on the electricity source and accounting method."
+    ],
+    [
+      "Time and people",
+      "Cluster hours and project effort",
+      "Parallel hardware can shorten a run. Data preparation, experiments, feedback, and evaluation extend the project and require skilled people."
+    ]
+  ],
+  "models": [
+    {
+      "name": "Llama 2 70B",
+      "year": "2023",
+      "tokens": "2.0T",
+      "hours": 1.72032,
+      "hardware": "A100 80GB",
+      "scope": "Pretraining",
+      "detail": "688 MWh power-capacity proxy",
+      "cost": "Dollar training budget not stated in the cited card.",
+      "source": 4
+    },
+    {
+      "name": "Llama 3.1 405B",
+      "year": "2024",
+      "tokens": "15T+",
+      "hours": 30.84,
+      "hardware": "H100 80GB",
+      "scope": "Training, as reported",
+      "detail": "21.59 GWh power-capacity proxy",
+      "cost": "Dollar training budget not stated in the cited card.",
+      "source": 5
+    },
+    {
+      "name": "DeepSeek-V3",
+      "year": "2024 release",
+      "tokens": "14.8T",
+      "hours": 2.788,
+      "hardware": "H800",
+      "scope": "Official training total",
+      "detail": "$5.576M at assumed $2/GPU-hour",
+      "cost": "Excludes prior research and ablations. Not a total project budget.",
+      "source": 6
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "author": "Wolfram, S.",
+      "year": "2023",
+      "title": "What Is ChatGPT Doing and Why Does It Work",
+      "url": "https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/"
+    },
+    {
+      "id": 2,
+      "author": "IBM",
+      "year": "n.d.",
+      "title": "What are large language models",
+      "url": "https://www.ibm.com/think/topics/large-language-models"
+    },
+    {
+      "id": 3,
+      "author": "Ouyang, L., et al.",
+      "year": "2022",
+      "title": "Training language models to follow instructions with human feedback",
+      "url": "https://arxiv.org/abs/2203.02155"
+    },
+    {
+      "id": 4,
+      "author": "Meta",
+      "year": "2023",
+      "title": "Llama 2 model card",
+      "url": "https://github.com/meta-llama/llama/blob/main/MODEL_CARD.md"
+    },
+    {
+      "id": 5,
+      "author": "Meta",
+      "year": "2024",
+      "title": "Llama 3.1 model card",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md"
+    },
+    {
+      "id": 6,
+      "author": "DeepSeek-AI",
+      "year": "2025",
+      "title": "DeepSeek-V3 Technical Report, version 2, Table 1",
+      "url": "https://arxiv.org/html/2412.19437v2"
+    },
+    {
+      "id": 7,
+      "author": "OpenAI",
+      "year": "2023",
+      "title": "GPT-4 Technical Report, section 2",
+      "url": "https://cdn.openai.com/papers/gpt-4.pdf"
+    },
+    {
+      "id": 8,
+      "author": "Hoffmann, J., et al.",
+      "year": "2022",
+      "title": "Training Compute-Optimal Large Language Models",
+      "url": "https://arxiv.org/abs/2203.15556"
+    },
+    {
+      "id": 9,
+      "author": "IBM Technology",
+      "year": "2023",
+      "title": "How Large Language Models Work [Video]",
+      "url": "https://www.youtube.com/watch?v=5sLYAQS9sWQ"
+    },
+    {
+      "id": 10,
+      "author": "Eye on Tech",
+      "year": "2023",
+      "title": "What is ChatGPT? (In About A Minute) [Video]",
+      "url": "https://www.youtube.com/watch?v=OGmDr8TLtTo"
+    }
+  ]
+}
